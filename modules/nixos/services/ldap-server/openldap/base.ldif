@@ -1,0 +1,27 @@
+# Base DN
+dn: dc=aiexcalibur,dc=com
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: aiexcalibur
+dc: aiexcalibur
+
+# Manager, aiexcalibur.com
+dn: cn=Manager,dc=aiexcalibur,dc=com
+cn: Manager
+description: LDAP administrator
+objectClass: organizationalRole
+objectClass: top
+roleOccupant: dc=aiexcalibur,dc=com
+
+# People, dc=aiexcalibur,dc=com
+dn: ou=People,dc=aiexcalibur,dc=com
+ou: People
+objectClass: top
+objectClass: organizationalUnit
+
+# Groups, dc=aiexcalibur,dc=com
+dn: ou=Group,dc=aiexcalibur,dc=com
+ou: Group
+objectClass: top
+objectClass: organizationalUnit
